@@ -14,3 +14,7 @@ Route::controller(HomeController::class)->group(function () {
     Route::get('/test', 'test');
     Route::get('/home/{param1}/{param2}', 'show');    
 });
+
+Route::get('/halo', function () {
+    return view('halo');
+});
